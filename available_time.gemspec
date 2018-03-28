@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "available_time"
   spec.version       = AvailableTime::VERSION
   spec.authors       = ["kingston"]
-  spec.email         = ["kingston.s@accionlabs.com"]
+  spec.email         = ["jenorish@gmail.com"]
 
   spec.summary       = %q{Gem to find available time in a day}
   spec.description   = %q{Gem to find available time in a day}
