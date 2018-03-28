@@ -30,7 +30,6 @@ module AvailableTime
 		end
 
 
-
 		private
 
 		def check_availbility(free_start_time=nil,free_end_time=nil,appointments)
