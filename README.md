@@ -33,11 +33,12 @@ Or install it yourself as:
 
 	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30PM", "01:00PM"]]
 	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30 PM", "01:00 PM"]]	
-
+## Interval
       Defalut interval is 30 minutes, We can change it by passing 
 
       t =  TimeSlot.new(8.30,"5.30pm",:interval => 5.minutes)
 
+## Rest
 	  We can pass rest time as well 
 	  Ex.
 	  t =  TimeSlot.new(8.30,"5.30pm",:rest => 5.minutes)
