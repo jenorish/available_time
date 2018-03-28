@@ -5,16 +5,6 @@ module AvailableTime
 	class TimeSlot
 		attr_accessor :start_time,:end_time, :interval, :rest
 
-	  # Supporting multiple format calling
-	  # t =  AvailableTime::TimeSlot.new(8.30,"5.30pm")
-	  # t =  AvailableTime::TimeSlot.new(8.30,"17.30")
-	  # t =  AvailableTime::TimeSlot.new(8.30,"17:30")
-	  # t =  AvailableTime::TimeSlot.new(8.30,"5:30pm")
-	  # appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["13:01","13:30"]]
-	  # appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30PM", "01:00PM"]]
-	  # appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30 PM", "01:00 PM"]]
-	  # t.free_slots(appointments)
-
 		def initialize(start_time,end_time, interval: 30.minutes,rest: 0.minutes)
 			@start_time = parse(start_time).to_i
 			@end_time   = parse(end_time).to_i

@@ -1,8 +1,6 @@
 # AvailableTime
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/available_time`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Gem to find available time in a day.
 
 ## Installation
 
@@ -22,13 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+ ## Supporting multiple format calling
+	  ` t =  AvailableTime::TimeSlot.new(8.30,"5.30pm")
+	    t =  AvailableTime::TimeSlot.new(8.30,"17.30")
+	    t =  AvailableTime::TimeSlot.new(8.30,"17:30")
+	    t =  AvailableTime::TimeSlot.new(8.30,"5:30pm")
+	    appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["13:01","13:30"]]
+        t.free_slots(appointments)
+	   result =>  [["08:30 AM", "09:00 AM"], ["09:30 AM", "10:00 AM"], ["11:30 AM", "12:00 PM"], ["12:00 PM", "12:30 PM"], ["12:30 PM", "01:00 PM"], ["01:30 PM", "02:00 PM"], ["04:30 PM", "05:00 PM"], ["05:00 PM", "05:30 PM"]]`
+	  
+ ## Supporting multile time format
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+	  `appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30PM", "01:00PM"]]
+	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30 PM", "01:00 PM"]]`
 
 ## Contributing
 
@@ -43,4 +47,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 Everyone interacting in the AvailableTime project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/available_time/blob/master/CODE_OF_CONDUCT.md).
 
 # available_time
-Gem to find available time in a day
+
