@@ -15,7 +15,6 @@ module AvailableTime
 		def free_slots(appointments=[])
 	    free_slots = []
 	    curr_time = start_time 
-
 	    while curr_time <= end_time - @interval ## Assuming last available time slot should not start after 4:30Pm
 	      free_start_time = curr_time
 	      free_end_time = free_start_time + @interval
