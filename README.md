@@ -21,18 +21,18 @@ Or install it yourself as:
 ## Usage
 
  ## Supporting multiple format calling
-	  ` t =  AvailableTime::TimeSlot.new(8.30,"5.30pm")
+	    t =  AvailableTime::TimeSlot.new(8.30,"5.30pm")
 	    t =  AvailableTime::TimeSlot.new(8.30,"17.30")
 	    t =  AvailableTime::TimeSlot.new(8.30,"17:30")
 	    t =  AvailableTime::TimeSlot.new(8.30,"5:30pm")
 	    appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["13:01","13:30"]]
         t.free_slots(appointments)
-	   result =>  [["08:30 AM", "09:00 AM"], ["09:30 AM", "10:00 AM"], ["11:30 AM", "12:00 PM"], ["12:00 PM", "12:30 PM"], ["12:30 PM", "01:00 PM"], ["01:30 PM", "02:00 PM"], ["04:30 PM", "05:00 PM"], ["05:00 PM", "05:30 PM"]]`
+	   result =>  [["08:30 AM", "09:00 AM"], ["09:30 AM", "10:00 AM"], ["11:30 AM", "12:00 PM"], ["12:00 PM", "12:30 PM"], ["12:30 PM", "01:00 PM"], ["01:30 PM", "02:00 PM"], ["04:30 PM", "05:00 PM"], ["05:00 PM", "05:30 PM"]]
 	  
  ## Supporting multile time format
 
-	  `appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30PM", "01:00PM"]]
-	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30 PM", "01:00 PM"]]`
+	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30PM", "01:00PM"]]
+	  appointments = [["09:00","9:30"],["10:01","11:30"],["14:00","16:30"],["1:01pm","1:30 Pm"],["12:30 PM", "01:00 PM"]]
 
 ## Contributing
 
